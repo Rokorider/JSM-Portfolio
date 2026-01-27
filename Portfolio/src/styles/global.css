@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 4rem;
+    min-height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
