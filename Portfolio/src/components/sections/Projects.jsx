@@ -1,9 +1,14 @@
-import React from 'react'
-
+import ProjectCard from "../ui/ProyectCard"
 function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div className="projects-grid">
+        <ProjectCard />
+      </div>
+    </section>
+  );
 }
 
-export default Projects
+export default Projects;

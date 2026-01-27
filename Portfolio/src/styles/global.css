@@ -2,8 +2,69 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #222;
+}
+
+
 section{
     padding: 4rem;
     min-height: 100vh;
-    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
 }
+
+/** Hero Section **/
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero p {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+#hero a {
+  margin-right: 1rem;
+}
+
+/** About Section **/
+#about {
+  max-width: 800px;
+}
+
+#about p {
+  line-height: 1.6;
+}
+
+/** Projects Section **/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/** Skills Section **/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skills-grid ul {
+  padding-left: 1.2rem;
+}
+
