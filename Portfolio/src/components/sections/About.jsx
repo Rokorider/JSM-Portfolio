@@ -1,6 +1,10 @@
+import { useFadeInOnScroll } from "../../hooks/useFadeInOnScroll";
+
 function About() {
+  const aboutRef = useFadeInOnScroll();
+
   return (
-    <section id="about">
+    <section id="about" ref={aboutRef}>
       <h2>About Me</h2>
 
       <p>

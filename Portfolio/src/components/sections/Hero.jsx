@@ -1,6 +1,10 @@
+import { useFadeInOnScroll } from "../../hooks/useFadeInOnScroll";
+
 function Hero() {
+  const heroRef = useFadeInOnScroll();
+
   return (
-    <section id="hero">
+    <section id="hero" ref={heroRef}>
       <h1>Hola, soy Javier</h1>
 
       <p>

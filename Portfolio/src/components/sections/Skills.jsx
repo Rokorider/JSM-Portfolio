@@ -1,6 +1,10 @@
+import { useFadeInOnScroll } from "../../hooks/useFadeInOnScroll";
+
 function Skills() {
+  const skillsRef = useFadeInOnScroll();
+
   return (
-    <section id="skills">
+    <section id="skills" ref={skillsRef}>
       <h2>Skills</h2>
 
       <div className="skills-grid">
