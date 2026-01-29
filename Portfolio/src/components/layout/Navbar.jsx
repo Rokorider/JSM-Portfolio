@@ -2,14 +2,16 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+    <nav className='navbar'>
+      <span className='navbar-logo' onClick={() => window.scrollTo({ top:0, behavior: 'smooth'})}>JSabaMont</span>
+      <ul className='navbar-links'>
+        <li><a href="#hero">Hero</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   )
 }
-
 export default Navbar
