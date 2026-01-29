@@ -1,20 +1,21 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #222;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 main {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
-section{
-    padding: 4rem;
-    min-height: 100vh;
-    margin: 0 auto;
+section {
+  padding: 4rem;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 /** Navbar Styles **/
@@ -22,24 +23,30 @@ section{
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(14, 14, 14, 0.85); /* negro con transparencia */
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid #e5e5e5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--bg-secondary);
   z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-logo {
   font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.3s ease ;
+  color: var(--text-main);
+  transition: opacity 0.3s ease;
 }
 
 .navbar-logo:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .navbar-links {
@@ -50,8 +57,13 @@ section{
 
 .navbar-links a {
   text-decoration: none;
-  color: #222;
+  color: var(--text-muted);
   position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--accent-main);
 }
 
 .navbar-links a::after {
@@ -61,7 +73,7 @@ section{
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: #222;
+  background: var(--accent-detail); 
   transition: width 0.3s ease;
 }
 
@@ -84,10 +96,12 @@ section{
 #hero p {
   max-width: 600px;
   font-size: 1.1rem;
+  color: var(--text-muted);
 }
 
 #hero a {
   margin-right: 1rem;
+  color: var(--accent-main);
 }
 
 /** About Section **/
@@ -97,6 +111,7 @@ section{
 
 #about p {
   line-height: 1.6;
+  color: var(--text-muted);
 }
 
 /** Projects Section **/
@@ -108,8 +123,15 @@ section{
 
 .project-card {
   padding: 1.5rem;
-  border: 1px solid #ddd;
+  background-color: var(--bg-secondary);
+  border: 1px solid #1f1f1f;
   border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-main);
 }
 
 /** Skills Section **/
@@ -121,6 +143,7 @@ section{
 
 .skills-grid ul {
   padding-left: 1.2rem;
+  color: var(--text-muted);
 }
 
 /** Fade In On Scroll Styles **/
