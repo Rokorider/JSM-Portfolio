@@ -5,24 +5,29 @@ function About() {
 
   return (
     <section id="about" ref={aboutRef}>
-      <h2>About Me</h2>
+      <h2>Sobre mí</h2>
 
       <p>
-        Soy desarrollador web con formación en FP y un enfoque muy práctico
-        hacia la programación. Me gusta entender cómo funcionan las cosas
-        por dentro y escribir código claro y mantenible.
+        Soy <strong>desarrollador web</strong> con formación en la formación profesional de 
+        <strong> Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> y experiencia trabajando con 
+        <strong> React, Angular y Spring</strong>.  
+        Me gusta crear aplicaciones <em>claras, funcionales y bien estructuradas</em>, donde el código tenga sentido 
+        tanto por dentro como por fuera.
       </p>
 
       <p>
-        He trabajado tanto en frontend como en backend, usando tecnologías
-        como React, Angular y Spring Boot, y me siento cómodo integrando
-        interfaces con APIs REST y sistemas de autenticación.
+        Para mí, desarrollar software no es solo hacer que algo funcione, sino 
+        <em> entender el problema, diseñar una solución lógica y convertirla en una experiencia sencilla </em> 
+        para quien la usa.  
+        Disfruto especialmente del <strong>equilibrio entre frontend y backend</strong>, cuidando tanto la interfaz 
+        como la arquitectura que hay detrás.
       </p>
 
       <p>
-        Actualmente sigo formándome y mejorando mis habilidades, con interés
-        en seguir profundizando en backend y en nuevas áreas como la
-        inteligencia artificial.
+        Actualmente sigo <strong>formándome de manera constante</strong> y mantengo una mentalidad abierta a otros 
+        horizontes de la programación, como <em>Inteligencia Artificial, DevOps y nuevas arquitecturas</em>, 
+        con el objetivo de ampliar mi perfil y construir soluciones cada vez más 
+        <strong> completas, sólidas y pensadas para personas reales</strong>.
       </p>
     </section>
   );

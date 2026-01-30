@@ -6,7 +6,7 @@ function Projects() {
 
   return (
     <section id="projects" ref={projectsRef}>
-      <h2>Projects</h2>
+      <h2>Algunos de mis Proyectos</h2>
 
       <div className="projects-grid">
         <ProjectCard />

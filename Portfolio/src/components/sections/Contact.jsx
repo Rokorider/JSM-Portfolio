@@ -5,7 +5,7 @@ function Contact() {
 
   return (
     <section id="contact" ref={contactRef}>
-      <h2>Contact</h2>
+      <h2>Contacto</h2>
 
       <p>
         Si quieres contactar conmigo, puedes hacerlo a través de:
